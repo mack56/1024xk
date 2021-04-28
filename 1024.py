@@ -259,7 +259,7 @@ class Autoreply:
     def main(cookieslist,todaylist,ge):
         #回复
         n=0
-        sl=random.randint(85,135)
+        sl=random.randint(55,80)
         print('本次需回复'+str(sl)+'个')
         cookies=cookieslist[ge]
         m=Autoreply.getnumber(cookies)
@@ -273,7 +273,7 @@ class Autoreply:
                 geturl,tid=Autoreply.getonelink(todaylist)
                 reply_news=Autoreply.getreply()
                 res=Autoreply.getmatch(geturl,cookies)
-                sleeptime=random.randint(84,242)
+                sleeptime=random.randint(94,242)
                 au=Autoreply.postreply(cookies,res,reply_news,tid)
                 if au=='回复成功':
                     print('第'+str(ge+1)+'个账号回复成功')
