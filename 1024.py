@@ -259,7 +259,7 @@ class Autoreply:
     def main(cookieslist,todaylist,ge):
         #回复
         n=0
-        sl=random.randint(55,80)
+        sl=random.randint(65,87)
         print('本次需回复'+str(sl)+'个')
         cookies=cookieslist[ge]
         m=Autoreply.getnumber(cookies)
@@ -302,9 +302,9 @@ if __name__ == "__main__":
     n=0
     cookieslist=[]
     todaylist=[]
-    user='mashang'
-    password='Zxcvbnm123%'
-    secret='TJ5IZEV3LRRXILIJ'
+    user= os.environ["USER"]
+    password= os.environ["PASSWORD"]
+    secret =os.environ["SECRET"]
 
     userlist=user.split()
     passwordlist=password.split()
