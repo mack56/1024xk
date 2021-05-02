@@ -259,7 +259,7 @@ class Autoreply:
     def main(cookieslist,todaylist,ge):
         #回复
         n=0
-        sl=random.randint(65,87)
+        sl=random.randint(45,87)
         print('本次需回复'+str(sl)+'个')
         cookies=cookieslist[ge]
         m=Autoreply.getnumber(cookies)
